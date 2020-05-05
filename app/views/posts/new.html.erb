@@ -1,0 +1,169 @@
+<div class="container" id="new-container">
+  <%= form_with(model: @post, local: true) do |f| %>
+    <div class="form-group mt-4"> 
+      <h1 class="osusume text-white bg-dark mt-5 mb-5 pl-3 ">オススメしたいゲームを入力してください</h1>
+      
+      <h3 class="col-sm-5 text-white bg-dark mt-5 mb-3">ジャンルを選んで下さい</h3>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="post[genre_id]" value="1" id="genre_1">
+        <label class="form-check-label text-white bg-dark" for="genre_1">アクション</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="post[genre_id]" value="2" id="genre_2">
+        <label class="form-check-label text-white bg-dark" for="genre_2">シューティング</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="post[genre_id]" value="3" id="genre_3">
+        <label class="form-check-label text-white bg-dark" for="genre_3">RPG</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="post[genre_id]" value="4" id="genre_4">
+        <label class="form-check-label text-white bg-dark" for="genre_4">シミュレーション</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="post[genre_id]" value="5" id="genre_5">
+        <label class="form-check-label text-white bg-dark" for="genre_5">アドベンチャー</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="post[genre_id]" value="6" id="genre_6">
+        <label class="form-check-label text-white bg-dark" for="genre_6">パズル</label>
+      </div> 
+    </div>  
+
+    <%# <div class="form-group">
+      <h3 class="col-sm-5 text-white bg-dark mt-5 mb-3">機種を選んで下さい（複数可）</h3>
+      <div class="form-check text-white bg-dark form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox1" value="1">
+        <label class="form-check-label" for="inlineCheckbox1">プレイステーション</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox2" value="2">
+        <label class="form-check-label" for="inlineCheckbox2">プレイステーション2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox3" value="3">
+        <label class="form-check-label" for="inlineCheckbox3">プレイステーション3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox4" value="4">
+        <label class="form-check-label" for="inlineCheckbox4">プレイステーション4</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox5" value="5">
+        <label class="form-check-label" for="inlineCheckbox5">プレイステーション5</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox6" value="6">
+        <label class="form-check-label" for="inlineCheckbox6">Xbox</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox7" value="7">
+        <label class="form-check-label" for="inlineCheckbox7">Xbox 360</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox8" value="8">
+        <label class="form-check-label" for="inlineCheckbox8">Xbox One</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox9" value="9">
+        <label class="form-check-label" for="inlineCheckbox9">Xbox Serise</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox10" value="10">
+        <label class="form-check-label" for="inlineCheckbox10">ファミリーコンピューター</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox11" value="11">
+        <label class="form-check-label" for="inlineCheckbox11">スーパーファミコン</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox12" value="12">
+        <label class="form-check-label" for="inlineCheckbox12">NINTENDO64</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox13" value="13">
+        <label class="form-check-label" for="inlineCheckbox13">ゲームキューブ</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox14" value="14">
+        <label class="form-check-label" for="inlineCheckbox14">Wii</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox15" value="15">
+        <label class="form-check-label" for="inlineCheckbox15">Wii U</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox16" value="16">
+        <label class="form-check-label" for="inlineCheckbox16">NintendoSwitch</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox17" value="17">
+        <label class="form-check-label" for="inlineCheckbox17">ニンテンドーDS</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox18" value="18">
+        <label class="form-check-label" for="inlineCheckbox18">ニンテンドー３DS</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox19" value="19">
+        <label class="form-check-label" for="inlineCheckbox19">メガドライブ</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox20" value="20">
+        <label class="form-check-label" for="inlineCheckbox20">ワンダーメガ</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox21" value="21">
+        <label class="form-check-label" for="inlineCheckbox21">セガサターン</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox22" value="22">
+        <label class="form-check-label" for="inlineCheckbox22">ドリームキャスト</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox23" value="23">
+        <label class="form-check-label" for="inlineCheckbox23">PCエンジン</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox24" value="24">
+        <label class="form-check-label" for="inlineCheckbox24">ネオジオ</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox25" value="25">
+        <label class="form-check-label" for="inlineCheckbox25">ネオジオミニ</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox26" value="26">
+        <label class="form-check-label" for="inlineCheckbox26">ゲームボーイアドバンス</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox27" value="27">
+        <label class="form-check-label" for="inlineCheckbox27">ワンダースワン</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox28" value="28">
+        <label class="form-check-label" for="inlineCheckbox28">steam</label>
+      </div>
+    </div> %>
+
+    <div class="form-group form-check text-white bg-dark">
+      <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
+    </div>
+
+    <div class="form-group row">
+      <label for="title" class="col-sm-2 col-form-label mt-3 mb-3 "><h3 class="title">タイトル</h3></label>
+      <div class="col-sm-10">
+        <input class="form-control text-white bg-dark mt-3 mb-3" type="text" name="post[title]" id="title" placeholder="タイトルを入力してください" >
+      </div>
+    </div>
+      
+      
+    <div class="d-inline p-2 bg-dark text-white ">
+      <label for="text">
+        <h4>オススメポイント</h4>
+      </label>
+    </div>
+    <textarea class="form-control text-white bg-dark" type="text" name="post[text]" id="text" placeholder="ネタバレ禁止！" rows="7"></textarea>
+    <button type="submit" class="btn btn-primary  border-white my-1 bg-dark">送信</button>  
+  <% end %>
+</div>

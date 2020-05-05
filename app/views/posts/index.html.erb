@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <h2>GAME-SITE</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item px-5 active">
+        <a class="nav-link" href="/"><h4>Home</h4></a>
+      </li>
+      <li class="nav-item mt-1">
+        <a class="nav-link" href="/posts/new"><h5>投稿する</h5></a>
+      </li>
+    </ul>
+    
+    <%= form_with(url: search_posts_path, local: true, method: :get, class: "form-inline my-2 my-lg-0") do |form| %>
+      <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "form-control mr-sm-2" %>
+      <%= form.submit "検索する", class: "btn btn-outline-success my-2 my-sm-0" %>
+    <% end %>
+  </div>
+</nav>
+<div class="main">
+  <ul class="nav nav-tabs ">
+    <li class="nav-item">
+      <div class="nav-link active ">
+        <%= link_to "Action", "genre/1" %>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="nav-link active">
+        <%= link_to "Shooting", "genre/2" %>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="nav-link active">
+        <%= link_to "RPG", "genre/3" %>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="nav-link active">
+        <%= link_to "Simulation", "genre/4" %>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="nav-link active">
+        <%= link_to "Adventure", "genre/5" %>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="nav-link active">
+        <%= link_to "Puzzle", "genre/6" %>
+      </div>
+    </li>
+  </ul>
+</div>
+
