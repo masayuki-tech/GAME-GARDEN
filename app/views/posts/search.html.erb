@@ -1,0 +1,29 @@
+<%= render 'layouts/header'%>
+
+<div class="container">
+  <div class="d-flex mt-5 flex-row-reverse bd-highlight">
+    <h1 class="m-auto">
+      <%= @genre.name %>
+    </h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="comments mt-4 overflow-auto">
+    <% @posts.each do |post| %>
+      <div class="comment mb-3 text-white bg-dark overflow-sc">
+        <div class="postTitle p-2 bg-info text-white">
+          <%= post.title %>
+        </div>
+        <div class="postText p-2 mb-2">
+          <%= simple_format post.text %>
+          <div class="tag-name text-right">
+            <% post.tags.each do |tag| %>
+              <%= tag.name %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

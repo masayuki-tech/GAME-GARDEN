@@ -1,3 +1,37 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: url(FF13.jpeg);
+}
+
+.tag-name {
+  font-size: small;
+}
+
+.header-title {
+  margin-right: 30px;
+}
+
+.nav-create {
+  padding: 0 40px;
+}
+
+.dropdown {
+  padding: 0 30px;
+}
+
+.form-check {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 0 5px;
+}
+
+.title {
+  text-align: center;
+  background-color: #343a40;
+  color: #ffffff;
+  line-height: 1;
+  padding: 1px 0;
+}
+
+.alert {
+  margin-bottom: 0em;
+}

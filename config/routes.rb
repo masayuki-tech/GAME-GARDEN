@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'
+  root 'posts#index'
+  resources :posts, only: [:index, :new, :create, :show] do
+    collection do
+      get 'search'
+    end
+  end
+  
+  resources :genres, only: [:index, :show]
+
+  resources :tags, only: [:show]
+  
 end
