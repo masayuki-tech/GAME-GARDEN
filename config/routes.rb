@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   end
   
   resources :genres, only: [:index, :show]
+
+  resources :tags, only: [:show]
   
 end

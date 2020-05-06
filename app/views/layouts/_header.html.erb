@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <h2>GAME-GARDEN</h2>
+  <h2 class="header-title">GAME-GARDEN</h2>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -11,6 +11,44 @@
       </li>
       <li class="nav-item mt-1">
         <a class="nav-link" href="/posts/new"><h5 class="nav-create">投稿する</h5></a>
+      </li>
+      <li class="nav-item mt-1">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            機種一覧
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/tags/1">プレイステーション</a>
+            <a class="dropdown-item" href="/tags/2">プレイステーション2</a>
+            <a class="dropdown-item" href="/tags/3">プレイステーション3</a>
+            <a class="dropdown-item" href="/tags/4">プレイステーション4</a>
+            <a class="dropdown-item" href="/tags/5">プレイステーション5</a>
+            <a class="dropdown-item" href="/tags/6">Xbox</a>
+            <a class="dropdown-item" href="/tags/7">Xbox360</a>
+            <a class="dropdown-item" href="/tags/8">XboxOne</a>
+            <a class="dropdown-item" href="/tags/9">XboxSerise</a>
+            <a class="dropdown-item" href="/tags/10">ファミリーコンピュータ</a>
+            <a class="dropdown-item" href="/tags/11">スーパーファミコン</a>
+            <a class="dropdown-item" href="/tags/12">NINTENDO64</a>
+            <a class="dropdown-item" href="/tags/13">ゲームキューブ</a>
+            <a class="dropdown-item" href="/tags/14">Wii</a>
+            <a class="dropdown-item" href="/tags/15">WiiU</a>
+            <a class="dropdown-item" href="/tags/16">NintendoSwitch</a>
+            <a class="dropdown-item" href="/tags/17">ニンテンドーDS</a>
+            <a class="dropdown-item" href="/tags/18">ニンテンドー3DS</a>
+            <a class="dropdown-item" href="/tags/19">メガドライブ</a>
+            <a class="dropdown-item" href="/tags/20">ワンダーメガ</a>
+            <a class="dropdown-item" href="/tags/21">セガサターン</a>
+            <a class="dropdown-item" href="/tags/22">ドリームキャスト</a>
+            <a class="dropdown-item" href="/tags/23">PCエンジン</a>
+            <a class="dropdown-item" href="/tags/24">ネオジオ</a>
+            <a class="dropdown-item" href="/tags/25">ネオジオミニ</a>
+            <a class="dropdown-item" href="/tags/26">ゲームボーイアドバンス</a>
+            <a class="dropdown-item" href="/tags/27">ワンダースワン</a>
+            <a class="dropdown-item" href="/tags/28">steam</a>
+          </div>
+        </div>
       </li>
     </ul>
     <%= form_with(url: search_posts_path, local: true, method: :get, class: "form-inline my-2 my-lg-0") do |form| %>
