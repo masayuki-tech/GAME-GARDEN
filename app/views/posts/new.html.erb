@@ -30,7 +30,7 @@
       </div> 
     </div>  
 
-    <%# <div class="form-group">
+    <div class="form-group">
       <h3 class="col-sm-5 text-white bg-dark mt-5 mb-3">機種を選んで下さい（複数可）</h3>
       <div class="form-check text-white bg-dark form-check-inline">
         <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox1" value="1">
@@ -144,11 +144,11 @@
         <input class="form-check-input" type="checkbox" name="post[tag_ids][]" id="inlineCheckbox28" value="28">
         <label class="form-check-label" for="inlineCheckbox28">steam</label>
       </div>
-    </div> %>
-
-    <div class="form-group form-check text-white bg-dark">
-      <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
     </div>
+
+    <%# <div class="form-group form-check text-wrap text-white bg-dark">
+      <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
+    <%# </div> %> 
 
     <div class="form-group row">
       <label for="title" class="col-sm-2 col-form-label mt-3 mb-3 "><h3 class="title">タイトル</h3></label>

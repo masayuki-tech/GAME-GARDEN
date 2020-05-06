@@ -21,7 +21,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:genre_id])
+    @post = Post.find(params[:genre_id]).order('created_at DESC')
   end
   
   def search
