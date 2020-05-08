@@ -1,17 +1,17 @@
 <%= render 'layouts/header'%>
 
-<div class="container">
+<%# <div class="container">
   <div class="d-flex mt-5 flex-row-reverse bd-highlight">
     <h1 class="m-auto">
       <%= @genre.name %>
-    </h1>
-  </div>
-</div>
+    <%# </h1>
+  </div> %>
+<%# </div> %> 
 
 <div class="container">
-  <div class="comments mt-4 overflow-auto">
+  <div class="d-flex comments mt-4 overflow-auto">
     <% @posts.each do |post| %>
-      <div class="comment mb-3 text-white bg-dark overflow-sc">
+      <div class="comment col-4 mb-3 text-white bg-dark overflow-sc">
         <div class="postTitle p-2 bg-info text-white">
           <%= post.title %>
         </div>
