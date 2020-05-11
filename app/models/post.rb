@@ -1,7 +1,12 @@
 class Post < ApplicationRecord
   validates :title, :text, presence: true
   validates :text, :text, presence: true
-  belongs_to :genre, optional: true
+  validates :post_tags, 
+        length: { 
+            minimum: 1
+        }
+
+  belongs_to :genre
   has_many :post_tags, dependent: :destroy
   has_many :tags, through: :post_tags
 
