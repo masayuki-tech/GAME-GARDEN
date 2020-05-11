@@ -1,6 +1,6 @@
 # README
 
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+# Name
  
 GAME-GARDEN
 
