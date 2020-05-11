@@ -9,9 +9,9 @@
 </div>
 
 <div class="container">
-  <div class="d-flex comments mt-4 overflow-auto">
+  <div class="d-flex comments mt-4 flex-wrap">
     <% @posts.each do |post| %>
-      <div class="comment col-4 mb-3 text-white bg-dark overflow-sc">
+      <div class="comment mb-3 text-white bg-dark ">
         <div class="postTitle p-2 bg-info text-white">
           <%= post.title %>
         </div>
