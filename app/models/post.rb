@@ -1,6 +1,7 @@
 class Post < ApplicationRecord
-  validates :title, :text, presence: true
-  validates :text, :text, presence: true
+  validates :title, presence: true
+  validates :text, presence: true
+  validates :genre_id, presence: true
   validates :post_tags, 
         length: { 
             minimum: 1
