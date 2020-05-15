@@ -1,6 +1,6 @@
 # GAME-GARDEN
 
-![gamegarden](https://github.com/masayuki-tech/GAME-GARDEN/master/gamegarden_image.jpg)
+![gamegarden](https://github.com/masayuki-tech/GAME-GARDEN/blob/master/gamegarden_image.png)
 
 ・GitURL：https://github.com/masayuki-tech/GAME-GARDEN
 
