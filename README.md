@@ -6,6 +6,10 @@ GAME-GARDEN
 
 ・GitURL：https://github.com/masayuki-tech/GAME-GARDEN
 
+
+・接続先情報 http://54.248.131.238
+
+
 ・開発環境（言語、ツール、OS、DB、サーバー）
   Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
 
