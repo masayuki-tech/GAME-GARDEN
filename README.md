@@ -1,8 +1,6 @@
-# README
-
 # GAME-GARDEN
 
-![gamegarden](https://github.com/quin001cunx/newRead/blob/master/gamegarden_image.jpg)
+![gamegarden](https://github.com/masayuki-tech/GAME-GARDEN/master/gamegarden_image.jpg)
 
 ・GitURL：https://github.com/masayuki-tech/GAME-GARDEN
 
