@@ -2,6 +2,8 @@
 
 # GAME-GARDEN
 
+![gamegarden](https://github.com/quin001cunx/newRead/blob/master/gamegarden_image.jpg)
+
 ・GitURL：https://github.com/masayuki-tech/GAME-GARDEN
 
 
@@ -70,26 +72,3 @@ https://gyazo.com/8ae77ac3f7f4bdebd0aed128afbb084e
 ### Association
 - belongs_to :post
 - belongs_to :tag
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
