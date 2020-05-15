@@ -2,7 +2,7 @@
 
 # Name
  
-GAME-GARDEN
+## GAME-GARDEN
 
 ・GitURL：https://github.com/masayuki-tech/GAME-GARDEN
 
