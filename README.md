@@ -2,24 +2,27 @@
 
 ![gamegarden](https://github.com/masayuki-tech/GAME-GARDEN/blob/master/gamegarden_image.png)
 
-## GitURL：https://github.com/masayuki-tech/GAME-GARDEN
+### GitURL：https://github.com/masayuki-tech/GAME-GARDEN
 
 
-## 接続先情報 http://54.248.131.238
+### 接続先情報 http://54.248.131.238
 
 
-## 開発環境（言語、ツール、OS、DB、サーバー）
+### 開発環境（言語、ツール、OS、DB、サーバー）
 Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
 
  
-## 内容  
+### 内容  
 ゲーム紹介サイト（誰でも気軽に投稿、閲覧できるようにログイン機能はつけませんでした）
 
-## 企画背景
+
+### 企画背景
 ゲーマーは自身の好きなゲームを共感してほしい人が多い背景から、自分がオススメしたい記事を投稿することができるように作成しました。また、新しいゲームを始めようとしている人が記事を参考に購入を検討できるようにしました。
 
-## 今後つけたい実装
+
+### 今後つけたい実装
 投稿者自身がゲームの評価を数値化できるようにする
+
 
 # DEMO
  
